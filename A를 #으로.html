@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function test(str) {
+        let answer = str.replaceAll("A","#");
+        return answer;
+    }
+
+    function test1(str) {
+        let answer="";
+        for(let x of str) {
+            if(x==='A') answer+="#";
+            else answer +=x;
+        }
+        return answer;
+    }
+
+    let str = "BANANA";
+    console.log(test(str))
+    console.log(test1(str));
+</script>
+</body>
+</html>

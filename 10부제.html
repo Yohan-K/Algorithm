@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function test(x, y) {
+        let count=0;
+        for (let a of y) {
+            if (a % 10 === x) {
+                count ++;
+            }
+        }
+        return count;
+    }
+
+    let y = [25, 23, 14, 47, 53, 17, 33]
+    console.log(test(4, y))
+</script>
+</body>
+</html>
