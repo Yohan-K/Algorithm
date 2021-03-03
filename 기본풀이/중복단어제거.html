@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>중복단어제거</title>
+</head>
+<body>
+<script>
+    function solution(arr) {
+        let answer;
+        answer = arr.filter((v, i)=> {
+            console.log(v, i)
+            console.log(arr.indexOf(v));
+            if(i===arr.indexOf(v)) return v;
+        });
+
+        return answer;
+    }
+    let arr=['good','time','good','time','student'];
+    console.log(solution(arr));
+</script>
+</body>
+</html>

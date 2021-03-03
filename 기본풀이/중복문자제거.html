@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 중복 문자 제거
+    function solution(str) {
+        let answer="";
+        for(let i=0; i<str.length; i++) {
+            if(i===str.indexOf(str[i])) {
+                answer += str[i];
+            }
+        }
+        return answer;
+    }
+
+    // 특정 문자 갯수 찾기
+    function solution1(str) {
+        debugger;
+        let answer=0;
+        let pos = str.indexOf('k');
+        while(pos!==-1) {
+            answer++;
+            pos = str.indexOf('k', pos+1);
+            console.log(pos)
+        }
+        return answer;
+    }
+
+    let str = "ksekkset"
+    console.log(solution(str));
+    console.log(solution1(str));
+</script>
+</body>
+</html>
