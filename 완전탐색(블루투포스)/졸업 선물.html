@@ -8,7 +8,7 @@
 <script>
     function solution(m, product) {
         let answer = 0;
-        n = product.length;
+        let n = product.length;
         // 상품 가격[0], 배송비[1]
         product.sort((a, b) => (a[0] + a[1]) - (b[0] + b[1]));
         for (let i = 0; i < n; i++) {
